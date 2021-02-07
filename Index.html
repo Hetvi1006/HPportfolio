@@ -37,11 +37,10 @@
                     <rect width="66" height="119" rx="33" stroke="none"/>
                     <rect x="3" y="3" width="60" height="113" rx="30" fill="none"/>
                   </g>
-                  <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(1750 732)" fill="#fff" stroke="#707070" stroke-width="1">
-                    <circle cx="24" cy="24" r="24" stroke="none"/>
-                    <circle cx="24" cy="24" r="23.5" fill="none"/>
+                  <circle class="circle" id="Ellipse_3" data-name="Ellipse 3" cx="24" cy="24" r="24" transform="translate(1750 732)" fill="#fff"/>
+                    <!-- <circle class="Circle" cx="24" cy="24" r="24" stroke="none"/>
+                    <circle class="Circle" cx="24" cy="24" r="23.5" fill="none"/> -->
                   </g>
-                </g>
               </svg>
         </div>
         <svg class="hero-design" id="Group_2" data-name="Group 2" xmlns="http://www.w3.org/2000/svg" width="523" height="435" viewBox="0 0 523 435">
@@ -137,5 +136,20 @@
             <a href=""><img src="Dashboard.png" alt="Fretastic"></a>
         </div>
     </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js" integrity="sha512-QcYm1q7RbnXmwY7HJ0H7938IS0MalTPYqGUF0fIwQgEjMBt2tqjDBt+R5I+ppdwEohjMdHnFU0H+RxmrGQ8qcg==" crossorigin="anonymous"></script>
+
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        var t1 = gsp.timeline();
+
+        t1.from('.content',{
+            y: '-30%',
+            opacity:0
+        })
+    </script>
+
 </body>
 </html>
